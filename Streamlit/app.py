@@ -163,15 +163,15 @@ st.markdown(f'<p style="background-color:{bg_color};font-size:2em;border-radius:
 
 
 #load data
-df = pd.read_csv('clean_aqi.csv')
+# df = pd.read_csv('clean_aqi.csv')
 
-show_df = st.checkbox("Click here to view the raw data")
-if show_df:
-    df
+# show_df = st.checkbox("Click here to view the raw data")
+# if show_df:
+#     df
 
 # Images
-from PIL import Image
-img = Image.open("airquality.jpeg")
-st.image(img, width =600)
+# from PIL import Image
+# img = Image.open("airquality.jpeg")
+# st.image(img, width =600)
 
 

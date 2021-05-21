@@ -18,9 +18,9 @@ from sklearn.preprocessing import StandardScaler
 
 
 #image
-from PIL import Image
-img1 = Image.open("galogo.jpeg")
-st.image(img1, width =200)
+# from PIL import Image
+# img1 = Image.open("galogo.jpeg")
+# st.image(img1, width =200)
 
 
 st.title( '"Welcome and Thank you for using our Air Quality Index Predictor Web App"')

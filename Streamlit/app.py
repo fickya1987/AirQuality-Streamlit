@@ -18,7 +18,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 #image
-# from PIL import Image
+#from PIL import Image
 # img1 = Image.open("galogo.jpeg")
 # st.image(img1, width =200)
 
@@ -53,7 +53,7 @@ o3_slider_txt = "Input the Ozone Level (unit: AQI)"
 model_type = st.radio("Model:", ('Neural Network by AQI', 'Neural Network by Value'))
 model = None
 if(model_type == 'Neural Network by AQI'):
-    model = tf.keras.models.load_model('../models/neural_net_model12.h5')
+    model = tf.keras.models.load_model('models/neural_net_model12.h5')
     CO_level_max = 250
     no2_level_max = 250
     pm10_level_max = 250
@@ -64,7 +64,7 @@ if(model_type == 'Neural Network by AQI'):
     no2_slider_txt = "Input the Nitrogen Dioxide Level (unit: AQI)"
     o3_slider_txt = "Input the Ozone Level (unit: AQI)"
 elif(model_type == 'Neural Network by Value'):
-    model = tf.keras.models.load_model('../models/neural_net_model12_raw.h5')
+    model = tf.keras.models.load_model('models/neural_net_model12_raw.h5')
     CO_level_max = 2000
     no2_level_max = 10000
     pm10_level_max = 120

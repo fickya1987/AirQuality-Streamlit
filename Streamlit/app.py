@@ -1,4 +1,3 @@
-from altair.vegalite.v4.schema.channels import Color
 import streamlit as st
 # import plotly.express as px
 import datetime
